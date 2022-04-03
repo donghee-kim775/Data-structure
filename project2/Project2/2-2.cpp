@@ -6,9 +6,9 @@ void main() {
 	int score[3] = { 91,86,97 };
 	char grade[3] = { 'A','B','C' };
 
-	printf("\n ***ÇĞ³âº° Ãëµæ ÇĞÁ¡*** \n\n");
+	printf("\n ***í•™ë…„ë³„ ì·¨ë“ í•™ì *** \n\n");
 	for ( i = 0; i < 3; i++){
-		printf("%3dÇĞ³â : ÃÑÁ¡ = %d, µî±Ş = %c\n", i + 1, score[i], grade[i]);
+		printf("%3dí•™ë…„ : ì´ì  = %d, ë“±ê¸‰ = %c\n", i + 1, score[i], grade[i]);
 	}
 
 	getchar();
