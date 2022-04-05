@@ -26,4 +26,4 @@ long int fact(int n) {
 		printf("\n fact(%d) 값 %ld 반환!!", n, value);
 		return value;
 	}
-}
+}//재귀함수
