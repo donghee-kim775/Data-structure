@@ -8,19 +8,20 @@ polynomial addPoly(polynomial A, polynomial B) {
 	C.degree = MAX(A.degree, B.degree);
 
 	while (A_index <= A.degree && B_index <= B.degree) {
+		printf("%d, %d", A_degree, B_degree);
 		if (A_degree > B_degree) {
 			C.coef[C_index++] = A.coef[A_index++];
 			A_degree--;
 		}
-		else if (A_degree = B_degree) {
+		else if (A_degree == B_degree) {
 			C.coef[C_index++] = A.coef[A_index++] + B.coef[B_index++];
 			A_degree--;
 			B_degree--;
 		}
 		else
 		{
-			C.coef[C_index++] = B.coef[B_index];
-			B_degree;
+			C.coef[C_index++] = B.coef[B_index++];
+			B_degree--;
 		}
 	}
 	return C;
@@ -29,7 +30,7 @@ polynomial addPoly(polynomial A, polynomial B) {
 void printPoly(polynomial P) {
 	int i, degree;
 	degree = P.degree;
-	for  (i = 0; i <=P.degree; i++){
+	for (i = 0; i <= P.degree; i++) {
 		printf("%3.0fx^%d", P.coef[i], degree--);
 		if (i < P.degree)
 			printf(" +");
