@@ -9,8 +9,7 @@ linkedList_h* createLinkedList_h() {
 	L = (linkedList_h*)malloc(sizeof(linkedList_h));
 	L->head = NULL;
 	return L;
-}//공백 연결 리스트 생산
-
+}
 void freeLinkedList_h(linkedList_h* L) {
 	listNode* p;
 	while (L->head!=NULL){
