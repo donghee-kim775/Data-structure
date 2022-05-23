@@ -26,31 +26,27 @@ int isFull(QueueType* Q) {
     else return 0;
 }
 
-// 순차 큐의 rear에 원소를 삽입하는 연산
 void enQueue(QueueType* Q, element item) {
-    if (isFull(Q)) return;  // 포화 상태이면, 삽입 연산 중단
+    if (isFull(Q)) return;
     else {
         Q->rear++;
         Q->queue[Q->rear] = item;
     }
 }
 
-// 순차 큐의 front에서 원소를 삭제하는 연산
 element deQueue(QueueType* Q) {
-    if (isEmpty(Q)) return;  // 공백 상태이면, 삭제 연산 중단
+    if (isEmpty(Q)) return;
     else {
         Q->front++;
         return Q->queue[Q->front];
     }
 }
 
-// 순차 큐의 가장 앞에 있는 원소를 검색하는 연산
 element peek(QueueType* Q) {
-    if (isEmpty(Q)) exit(1); // 공백 상태이면 연산 중단
+    if (isEmpty(Q)) exit(1);
     else return Q->queue[Q->front + 1];
 }
 
-// 순차 큐의 원소를 출력하는 연산
 void printQ(QueueType* Q) {
     int i;
     printf(" Queue : [");

@@ -2,21 +2,21 @@
 #include "queue.h"
 
 void main(void) {
-	QueueType* Q1 = createQueue();  // Å¥ »ý¼º
+	QueueType* Q1 = createQueue();
 	element data;
-	printf("\n ***** ¼øÂ÷ Å¥ ¿¬»ê ***** \n");
-	printf("\n »ðÀÔ A>>");  enQueue(Q1, 'A'); printQ(Q1);
-	printf("\n »ðÀÔ B>>");  enQueue(Q1, 'B'); printQ(Q1);
-	printf("\n »ðÀÔ C>>");  enQueue(Q1, 'C'); printQ(Q1);
+	printf("\n ***** ìˆœì°¨ í ì—°ì‚° ***** \n");
+	printf("\n ì‚½ìž… A>>");  enQueue(Q1, 'A'); printQ(Q1);
+	printf("\n ì‚½ìž… B>>");  enQueue(Q1, 'B'); printQ(Q1);
+	printf("\n ì‚½ìž… C>>");  enQueue(Q1, 'C'); printQ(Q1);
 	data = peek(Q1);    printf(" peek item : %c \n", data);
-	printf("\n »èÁ¦  >>");  data = deQueue(Q1); printQ(Q1);
-	printf("\t»èÁ¦ µ¥ÀÌÅÍ: %c", data);
-	printf("\n »èÁ¦  >>");  data = deQueue(Q1); printQ(Q1);
-	printf("\t»èÁ¦ µ¥ÀÌÅÍ: %c", data);
-	printf("\n »èÁ¦  >>");  data = deQueue(Q1); printQ(Q1);
-	printf("\t\t»èÁ¦ µ¥ÀÌÅÍ: %c", data);
+	printf("\n ì‚­ì œ  >>");  data = deQueue(Q1); printQ(Q1);
+	printf("\tì‚­ì œ ë°ì´í„°: %c", data);
+	printf("\n ì‚­ì œ  >>");  data = deQueue(Q1); printQ(Q1);
+	printf("\tì‚­ì œ ë°ì´í„°: %c", data);
+	printf("\n ì‚­ì œ  >>");  data = deQueue(Q1); printQ(Q1);
+	printf("\t\tì‚­ì œ ë°ì´í„°: %c", data);
 
-	printf("\n »ðÀÔ D>>");  enQueue(Q1, 'D'); printQ(Q1);
-	printf("\n »ðÀÔ E>>");  enQueue(Q1, 'E'); printQ(Q1);
+	printf("\n ì‚½ìž… D>>");  enQueue(Q1, 'D'); printQ(Q1);
+	printf("\n ì‚½ìž… E>>");  enQueue(Q1, 'E'); printQ(Q1);
 	getchar();
 }
